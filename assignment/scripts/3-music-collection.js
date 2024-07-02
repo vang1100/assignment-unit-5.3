@@ -3,8 +3,38 @@ console.log('***** Music Collection *****')
 
 
 
+let myCollection = [];
 
 
+function addToCollection(collection, title, artist, yearPublished){
+  let myAlbum = {
+    title: title,
+    artist: artist,
+    yearPublished: yearPublished
+    
+  } 
+  collection.push(myAlbum);
+  
+    return myAlbum
+}
+
+addToCollection(myCollection, 'test', 'test', 'test');
+addToCollection(myCollection, 'test', 'test', 'test');
+addToCollection(myCollection, 'test', 'test', 'test');
+addToCollection(myCollection, 'test', 'test', 'test');
+addToCollection(myCollection, 'test', 'test', 'test');
+addToCollection(myCollection, 'test', 'test', 'test');
+
+console.log('myAlbum', myCollection);
+
+
+function showCollection(collection) {
+
+}
+
+function findByArtist(collection){
+
+}
 
 
 
