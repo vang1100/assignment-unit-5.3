@@ -1,8 +1,6 @@
 console.log('***** Music Collection *****')
 // Safe Zone -- Write code below this line
 
-
-
 let myCollection = [];
 
 
@@ -18,19 +16,27 @@ function addToCollection(collection, title, artist, yearPublished){
     return myAlbum
 }
 
-addToCollection(myCollection, 'test', 'test', 'test');
-addToCollection(myCollection, 'test', 'test', 'test');
-addToCollection(myCollection, 'test', 'test', 'test');
-addToCollection(myCollection, 'test', 'test', 'test');
-addToCollection(myCollection, 'test', 'test', 'test');
-addToCollection(myCollection, 'test', 'test', 'test');
+console.log(addToCollection(myCollection, 'Bubble Gum', 'New Jeans', 2024));
+console.log(addToCollection(myCollection, 'Pluto Projector', 'Rex Orange County', 2019));
+console.log(addToCollection(myCollection, 'Intro', 'Ariana Grande', 2024));
+console.log(addToCollection(myCollection, 'August', 'Taylor Swift', 2020));
+console.log(addToCollection(myCollection, 'Strange', 'Celeste', 2019));
+console.log(addToCollection(myCollection, 'Birds Of A Feather', 'Billie Ellish', 2024));
 
 console.log('myAlbum', myCollection);
 
 
+
+
 function showCollection(collection) {
+  for (let items of collection) {
+    console.log(`${items.title} by ${items.artist}, published in ${items.yearPublished}`);
+  }
+  
 
 }
+
+(showCollection(myCollection));
 
 function findByArtist(collection){
 
