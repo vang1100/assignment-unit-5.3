@@ -38,9 +38,21 @@ function showCollection(collection) {
 
 (showCollection(myCollection));
 
-function findByArtist(collection){
 
+function findByArtist(collection, artist){
+  let matchedArtists = [];
+  for (let singer of collection) {
+   if (singer.artist === artist)
+    matchedArtists.push(singer);
+  }
+  return matchedArtists;
+
+  
 }
+
+console.log(findByArtist(myCollection, 'Taylor Swift'));
+console.log(findByArtist(myCollection, 'retretretgfdgerte'));
+console.log(findByArtist(myCollection, 'Celeste'));
 
 
 
